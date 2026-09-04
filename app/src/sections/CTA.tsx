@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const socialLinks = [
   { name: 'GitHub', icon: Github, href: 'https://github.com/ebuka1017' },
-  { name: 'LinkedIn', icon: Linkedin, href: 'https://linkedin.com/in/isaacokwuzi' },
+  { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/in/isaac-okwuzi-0304791b9' },
   { name: 'Twitter', icon: Twitter, href: 'https://x.com/nothiro__' },
   { name: 'Email', icon: Mail, href: 'mailto:isaacokwuzi@gmail.com' },
 ];
