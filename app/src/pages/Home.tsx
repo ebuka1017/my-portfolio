@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Hero from '../sections/Hero';
-import ToolsTicker from '../sections/ToolsTicker';
 import Projects from '../sections/Projects';
 import Experience from '../sections/Experience';
 import Skills from '../sections/Skills';
@@ -45,7 +44,6 @@ function Home() {
       <ParticleBackground />
       <main className="relative z-10">
         <Hero />
-        <ToolsTicker />
         <Projects />
         <Experience />
         <Skills />

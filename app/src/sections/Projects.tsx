@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ArrowUpRight, Sparkles, Palette, Github } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Link } from 'react-router-dom';
 import { projects } from '../data/projects';
@@ -14,24 +14,6 @@ const featuredProjects = [
   projects.find(p => p.slug === 'simplmonie'),
   projects.find(p => p.slug === 'baseguard'),
 ].filter(Boolean);
-
-const getCategoryIcon = (category: string) => {
-  switch (category) {
-    case 'app': return <Sparkles className="w-3 h-3" />;
-    case 'design': return <Palette className="w-3 h-3" />;
-    case 'github': return <Github className="w-3 h-3" />;
-    default: return null;
-  }
-};
-
-const getCategoryLabel = (category: string) => {
-  switch (category) {
-    case 'app': return 'App';
-    case 'design': return 'Design';
-    case 'github': return 'GitHub';
-    default: return category;
-  }
-};
 
 const Projects = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -125,22 +107,6 @@ const Projects = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/20 to-transparent"></div>
                   
-                  {/* Category Badge */}
-                  <div className="absolute top-3 left-3 sm:top-4 sm:left-4">
-                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 bg-black/60 backdrop-blur-sm rounded-full text-xs font-medium text-white">
-                      {getCategoryIcon(project.category)}
-                      {getCategoryLabel(project.category)}
-                    </span>
-                  </div>
-
-                  {/* Vibe Engineered Badge */}
-                  {project.isVibeEngineered && (
-                    <div className="absolute top-3 right-3 sm:top-4 sm:right-4">
-                      <Badge className="bg-ink text-canvas text-[10px] sm:text-xs font-medium border-none">
-                        Vibe Engineered
-                      </Badge>
-                    </div>
-                  )}
                 </div>
 
                 {/* Content */}

@@ -144,14 +144,6 @@
   }
 }
 
-@keyframes ticker {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
 
 @keyframes gradient-shift {
   0% {
@@ -198,9 +190,6 @@
   animation: counter-orbit 30s linear infinite;
 }
 
-.animate-ticker {
-  animation: ticker 20s linear infinite;
-}
 
 .animate-gradient {
   background-size: 200% 200%;
