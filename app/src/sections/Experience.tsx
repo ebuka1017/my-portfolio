@@ -11,7 +11,7 @@ const experiences = [
     role: 'Lead Product Designer',
     company: 'ServeLead Humanitarian Initiative',
     period: '05/2026 - Present',
-    description: 'Redesigning the gathr.gives mobile app for Social Good Fund USA.',
+    description: 'Leading the end-to-end redesign of the gathr.gives platform for Social Good Fund USA across mobile and web. Shaping product strategy and UX for its core flows, from making offers and asking for help to community projects where members discuss, fund, and vote on local initiatives. Building a cross-platform design system with WCAG accessibility, in close collaboration with engineering.',
   },
   {
     id: 1,
