@@ -7,6 +7,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 const experiences = [
   {
+    id: 0,
+    role: 'Lead Product Designer',
+    company: 'ServeLead Humanitarian Initiative',
+    period: '05/2026 - Present',
+    description: 'Redesigning the gathr.gives mobile app for Social Good Fund USA.',
+  },
+  {
     id: 1,
     role: 'Independent Contractor',
     company: 'Product Design',
