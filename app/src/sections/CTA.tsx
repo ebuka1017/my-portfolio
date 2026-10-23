@@ -114,7 +114,7 @@ const CTA = () => {
         >
           {/* Center Profile Image */}
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-4 border-[#202020] shadow-2xl">
+            <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-4 border-surface shadow-2xl">
               <img
                 src="/images/profile.jpg"
                 alt="Isaac Okwuzi"
@@ -141,14 +141,14 @@ const CTA = () => {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="social-icon absolute w-10 h-10 sm:w-12 sm:h-12 bg-[#202020] rounded-full flex items-center justify-center border border-[#d9d9d9]/10 transition-all duration-300 hover:bg-[#d9d9d9] hover:scale-110 group"
+                  className="social-icon absolute w-10 h-10 sm:w-12 sm:h-12 bg-surface rounded-full flex items-center justify-center border border-ink/10 transition-all duration-300 hover:bg-ink hover:scale-110 group"
                   style={{
                     left: `${x}%`,
                     top: `${y}%`,
                     transform: 'translate(-50%, -50%)',
                   }}
                 >
-                  <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-[#8c8c8c] group-hover:text-[#1a1a1a] transition-colors" />
+                  <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-sub group-hover:text-canvas transition-colors" />
                 </a>
               );
             })}
@@ -157,11 +157,11 @@ const CTA = () => {
 
         {/* CTA Content Section */}
         <div ref={contentRef} className="text-center space-y-4 sm:space-y-5">
-          <h2 className="reveal-item text-3xl sm:text-4xl lg:text-5xl font-bold text-[#d9d9d9]">
+          <h2 className="reveal-item text-3xl sm:text-4xl lg:text-5xl font-bold text-ink">
             Let's work together
           </h2>
           
-          <p className="reveal-item text-base sm:text-lg text-[#8c8c8c] max-w-lg mx-auto">
+          <p className="reveal-item text-base sm:text-lg text-sub max-w-lg mx-auto">
             I'm currently available for new projects and collaborations. 
             Let's create something amazing.
           </p>
@@ -172,7 +172,7 @@ const CTA = () => {
             </MagneticButton>
             <button
               onClick={() => setShowTypeform(true)}
-              className="inline-flex items-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 bg-[#202020] text-[#d9d9d9] font-medium rounded-full border border-[#d9d9d9]/10 transition-all duration-300 hover:bg-[#2e2e2e] hover:border-[#d9d9d9]/20 text-sm sm:text-base"
+              className="inline-flex items-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 bg-surface text-ink font-medium rounded-full border border-ink/10 transition-all duration-300 hover:bg-raise hover:border-ink/20 text-sm sm:text-base"
             >
               Send Inquiry
             </button>
@@ -188,9 +188,9 @@ const CTA = () => {
         >
           <button
             onClick={() => setShowTypeform(false)}
-            className="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-[#202020] flex items-center justify-center border border-[#d9d9d9]/10 transition-all duration-300 hover:bg-[#2e2e2e]"
+            className="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-surface flex items-center justify-center border border-ink/10 transition-all duration-300 hover:bg-raise"
           >
-            <X className="w-5 h-5 text-[#8c8c8c]" />
+            <X className="w-5 h-5 text-sub" />
           </button>
           <div 
             data-tf-live="01KGTNZFECH5M9DMH4NKBP1ZBW" 

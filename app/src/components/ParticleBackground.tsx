@@ -52,7 +52,7 @@ const ParticleBackground = () => {
 
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(217, 217, 217, ${particle.opacity})`;
+        ctx.fillStyle = `rgb(${getComputedStyle(document.documentElement).getPropertyValue('--c-ink').trim() || '217 217 217'} / ${particle.opacity})`;
         ctx.fill();
       });
 

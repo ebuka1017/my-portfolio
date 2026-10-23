@@ -41,7 +41,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-[#1a1a1a] overflow-x-hidden">
+    <div className="relative min-h-screen bg-canvas overflow-x-hidden">
       <ParticleBackground />
       <main className="relative z-10">
         <Hero />

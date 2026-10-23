@@ -142,14 +142,14 @@ const Skills = () => {
         <div ref={headerRef} className="text-center mb-10 sm:mb-14">
           <Badge 
             variant="secondary" 
-            className="mb-3 bg-[#202020] text-[#8c8c8c] border-none hover:bg-[#2e2e2e]"
+            className="mb-3 bg-surface text-sub border-none hover:bg-raise"
           >
             skills
           </Badge>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#d9d9d9] mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-ink mb-4">
             Skills & Expertise
           </h2>
-          <p className="text-base sm:text-lg text-[#8c8c8c] max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-sub max-w-2xl mx-auto">
             Technologies and tools I work with daily to bring ideas to life.
           </p>
         </div>
@@ -162,10 +162,10 @@ const Skills = () => {
               <div key={category.name}>
                 {/* Category Label */}
                 <div className="category-label flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-[#202020] flex items-center justify-center">
-                    <CategoryIcon className="w-4 h-4 sm:w-5 sm:h-5 text-[#d9d9d9]" />
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-surface flex items-center justify-center">
+                    <CategoryIcon className="w-4 h-4 sm:w-5 sm:h-5 text-ink" />
                   </div>
-                  <h3 className="text-lg sm:text-xl font-bold text-[#d9d9d9]">{category.name}</h3>
+                  <h3 className="text-lg sm:text-xl font-bold text-ink">{category.name}</h3>
                 </div>
 
                 {/* Skills Grid */}
@@ -188,19 +188,19 @@ const Skills = () => {
                           }}
                         >
                           {/* Front */}
-                          <div className="absolute inset-0 backface-hidden bg-[#202020] rounded-lg sm:rounded-xl border border-[#d9d9d9]/10 flex flex-col items-center justify-center gap-2 transition-all duration-300 hover:border-[#d9d9d9]/20 hover:bg-[#2e2e2e]">
-                            <SkillIcon className="w-4 h-4 sm:w-5 sm:h-5 text-[#8c8c8c]" />
-                            <span className="text-xs sm:text-sm font-medium text-[#d9d9d9] text-center px-2">
+                          <div className="absolute inset-0 backface-hidden bg-surface rounded-lg sm:rounded-xl border border-ink/10 flex flex-col items-center justify-center gap-2 transition-all duration-300 hover:border-ink/20 hover:bg-raise">
+                            <SkillIcon className="w-4 h-4 sm:w-5 sm:h-5 text-sub" />
+                            <span className="text-xs sm:text-sm font-medium text-ink text-center px-2">
                               {skill.name}
                             </span>
                           </div>
 
                           {/* Back */}
                           <div
-                            className="absolute inset-0 backface-hidden bg-[#d9d9d9] rounded-lg sm:rounded-xl flex items-center justify-center"
+                            className="absolute inset-0 backface-hidden bg-ink rounded-lg sm:rounded-xl flex items-center justify-center"
                             style={{ transform: 'rotateY(180deg)' }}
                           >
-                            <span className="text-xs sm:text-sm font-bold text-[#1a1a1a]">Proficient</span>
+                            <span className="text-xs sm:text-sm font-bold text-canvas">Proficient</span>
                           </div>
                         </div>
                       </div>

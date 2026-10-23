@@ -141,14 +141,14 @@ const Experience = () => {
           <div ref={headerRef} className="lg:col-span-2 lg:sticky lg:top-24 lg:self-start">
             <Badge 
               variant="secondary" 
-              className="mb-3 bg-[#202020] text-[#8c8c8c] border-none hover:bg-[#2e2e2e]"
+              className="mb-3 bg-surface text-sub border-none hover:bg-raise"
             >
               experience
             </Badge>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#d9d9d9] mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-ink mb-4">
               Work Experience
             </h2>
-            <p className="text-base sm:text-lg text-[#8c8c8c]">
+            <p className="text-base sm:text-lg text-sub">
               My professional journey in design engineering and product development.
             </p>
           </div>
@@ -156,10 +156,10 @@ const Experience = () => {
           {/* Timeline */}
           <div ref={timelineRef} className="lg:col-span-3 relative">
             {/* Timeline Line */}
-            <div className="absolute left-3 sm:left-4 top-0 bottom-0 w-px bg-[#d9d9d9]/10">
+            <div className="absolute left-3 sm:left-4 top-0 bottom-0 w-px bg-ink/10">
               <div
                 ref={lineRef}
-                className="absolute top-0 left-0 w-full bg-gradient-to-b from-[#d9d9d9]/50 to-[#d9d9d9]/10 origin-top"
+                className="absolute top-0 left-0 w-full bg-gradient-to-b from-ink/50 to-ink/10 origin-top"
                 style={{ height: '100%' }}
               ></div>
             </div>
@@ -172,27 +172,27 @@ const Experience = () => {
                   className="experience-card relative pl-10 sm:pl-14 perspective-1000"
                 >
                   {/* Timeline Dot */}
-                  <div className="timeline-dot absolute left-0 sm:left-1 top-1 w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-[#202020] border border-[#d9d9d9]/20 flex items-center justify-center z-10">
-                    <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#d9d9d9]"></div>
+                  <div className="timeline-dot absolute left-0 sm:left-1 top-1 w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-surface border border-ink/20 flex items-center justify-center z-10">
+                    <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-ink"></div>
                   </div>
 
                   {/* Card */}
-                  <div className="group bg-[#202020] rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-[#d9d9d9]/10 transition-all duration-300 hover:border-[#d9d9d9]/20 hover:translate-x-1 sm:hover:translate-x-2">
+                  <div className="group bg-surface rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-ink/10 transition-all duration-300 hover:border-ink/20 hover:translate-x-1 sm:hover:translate-x-2">
                     {/* Period */}
-                    <span className="text-xs sm:text-sm text-[#8c8c8c] font-medium">
+                    <span className="text-xs sm:text-sm text-sub font-medium">
                       {exp.period}
                     </span>
 
                     {/* Role & Company */}
-                    <h3 className="text-lg sm:text-xl font-bold text-[#d9d9d9] mt-1 mb-0.5">
+                    <h3 className="text-lg sm:text-xl font-bold text-ink mt-1 mb-0.5">
                       {exp.role}
                     </h3>
-                    <p className="text-sm sm:text-base text-[#8c8c8c] font-medium mb-3">
+                    <p className="text-sm sm:text-base text-sub font-medium mb-3">
                       {exp.company}
                     </p>
 
                     {/* Description */}
-                    <p className="text-sm sm:text-base text-[#8c8c8c] leading-relaxed">
+                    <p className="text-sm sm:text-base text-sub leading-relaxed">
                       {exp.description}
                     </p>
                   </div>
