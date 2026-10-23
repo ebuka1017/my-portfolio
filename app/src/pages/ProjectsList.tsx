@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
 import { ArrowLeft, ArrowUpRight, Sparkles, Palette, Github, Images } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
 import { projects } from '../data/projects';
 import ParticleBackground from '../components/ParticleBackground';
 import ImageGallery from '../components/ImageGallery';
@@ -151,13 +150,6 @@ const ProjectsList = () => {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
                       
-                      {project.isVibeEngineered && (
-                        <div className="absolute top-2 left-2 sm:top-3 sm:left-3">
-                          <Badge className="bg-ink text-canvas text-[10px] sm:text-xs font-medium border-none">
-                            Vibe Engineered
-                          </Badge>
-                        </div>
-                      )}
                     </div>
 
                     <div className="p-4 sm:p-5">
