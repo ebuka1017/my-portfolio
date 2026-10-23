@@ -73,7 +73,7 @@ const LogoTicker = () => {
         {/* Heading */}
         <h3
           ref={headingRef}
-          className="text-center text-sm font-medium text-[#8c8c8c] uppercase tracking-wider mb-12"
+          className="text-center text-sm font-medium text-sub uppercase tracking-wider mb-12"
         >
           Trusted by industry tools
         </h3>
@@ -86,8 +86,8 @@ const LogoTicker = () => {
         style={{ transform: 'rotate(-1deg)' }}
       >
         {/* Gradient Masks */}
-        <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#1a1a1a] to-transparent z-10"></div>
-        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#1a1a1a] to-transparent z-10"></div>
+        <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-canvas to-transparent z-10"></div>
+        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-canvas to-transparent z-10"></div>
 
         {/* Ticker Track */}
         <div className="flex animate-ticker">
@@ -100,8 +100,8 @@ const LogoTicker = () => {
                 className="flex items-center justify-center px-12 py-6 group"
               >
                 <div className="flex items-center gap-3 transition-all duration-300 grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100">
-                  <Icon className="w-8 h-8 text-[#d9d9d9]" />
-                  <span className="text-lg font-medium text-[#d9d9d9]">{logo.name}</span>
+                  <Icon className="w-8 h-8 text-ink" />
+                  <span className="text-lg font-medium text-ink">{logo.name}</span>
                 </div>
               </div>
             );

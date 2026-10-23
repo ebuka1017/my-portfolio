@@ -5,6 +5,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        ink: "rgb(var(--c-ink) / <alpha-value>)",
+        sub: "rgb(var(--c-sub) / <alpha-value>)",
+        surface: "rgb(var(--c-surface) / <alpha-value>)",
+        canvas: "rgb(var(--c-canvas) / <alpha-value>)",
+        raise: "rgb(var(--c-raise) / <alpha-value>)",
+        edge: "rgb(var(--c-edge) / <alpha-value>)",
+        edge2: "rgb(var(--c-edge2) / <alpha-value>)",
+        faint: "rgb(var(--c-faint) / <alpha-value>)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

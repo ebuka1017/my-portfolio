@@ -89,17 +89,17 @@ const Projects = () => {
           <div>
             <Badge 
               variant="secondary" 
-              className="mb-3 bg-[#202020] text-[#8c8c8c] border-none hover:bg-[#2e2e2e]"
+              className="mb-3 bg-surface text-sub border-none hover:bg-raise"
             >
               my work
             </Badge>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#d9d9d9]">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-ink">
               Selected Projects
             </h2>
           </div>
           <Link
             to="/projects"
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#202020] text-[#d9d9d9] font-medium rounded-full border border-[#d9d9d9]/10 transition-all duration-300 hover:bg-[#2e2e2e] hover:border-[#d9d9d9]/20 group self-start sm:self-auto text-sm sm:text-base"
+            className="inline-flex items-center gap-2 px-5 py-2.5 bg-surface text-ink font-medium rounded-full border border-ink/10 transition-all duration-300 hover:bg-raise hover:border-ink/20 group self-start sm:self-auto text-sm sm:text-base"
           >
             View All Projects
             <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
@@ -114,7 +114,7 @@ const Projects = () => {
               <Link
                 key={project.id}
                 to={`/projects/${project.slug}`}
-                className="project-card group block relative bg-[#202020] rounded-2xl sm:rounded-3xl overflow-hidden border border-[#d9d9d9]/10 transition-all duration-500 hover:border-[#d9d9d9]/25 hover:shadow-2xl hover:-translate-y-2"
+                className="project-card group block relative bg-surface rounded-2xl sm:rounded-3xl overflow-hidden border border-ink/10 transition-all duration-500 hover:border-ink/25 hover:shadow-2xl hover:-translate-y-2"
               >
                 {/* Image Container - wider aspect ratio (16/10) */}
                 <div className="relative aspect-[16/10] overflow-hidden">
@@ -123,7 +123,7 @@ const Projects = () => {
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#202020] via-[#202020]/20 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/20 to-transparent"></div>
                   
                   {/* Category Badge */}
                   <div className="absolute top-3 left-3 sm:top-4 sm:left-4">
@@ -136,7 +136,7 @@ const Projects = () => {
                   {/* Vibe Engineered Badge */}
                   {project.isVibeEngineered && (
                     <div className="absolute top-3 right-3 sm:top-4 sm:right-4">
-                      <Badge className="bg-[#d9d9d9] text-[#1a1a1a] text-[10px] sm:text-xs font-medium border-none">
+                      <Badge className="bg-ink text-canvas text-[10px] sm:text-xs font-medium border-none">
                         Vibe Engineered
                       </Badge>
                     </div>
@@ -145,13 +145,13 @@ const Projects = () => {
 
                 {/* Content */}
                 <div className="p-4 sm:p-5">
-                  <h4 className="text-lg sm:text-xl font-bold text-[#d9d9d9] mb-1.5 group-hover:text-white transition-colors">
+                  <h4 className="text-lg sm:text-xl font-bold text-ink mb-1.5 group-hover:text-ink transition-colors">
                     {project.title}
                   </h4>
-                  <p className="text-sm text-[#8c8c8c] line-clamp-2 mb-3">
+                  <p className="text-sm text-sub line-clamp-2 mb-3">
                     {project.description}
                   </p>
-                  <div className="flex items-center gap-1 text-sm text-[#d9d9d9] font-medium">
+                  <div className="flex items-center gap-1 text-sm text-ink font-medium">
                     <span>View Details</span>
                     <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
                   </div>

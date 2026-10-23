@@ -31,9 +31,9 @@ const MagneticButton = ({ children, href, onClick, className = '' }: MagneticBut
 
   const baseClasses = `
     relative inline-flex items-center gap-2 px-6 py-3 
-    bg-[#d9d9d9] text-[#1a1a1a] font-medium rounded-full
+    bg-ink text-canvas font-medium rounded-full
     transition-all duration-300 ease-out
-    hover:shadow-[0_0_30px_rgba(217,217,217,0.3)]
+    hover:shadow-[0_0_30px_rgb(var(--c-ink)/0.3)]
     group
     ${className}
   `;

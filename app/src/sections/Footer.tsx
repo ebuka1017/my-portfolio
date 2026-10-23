@@ -55,14 +55,14 @@ const Footer = () => {
       {/* Top Border */}
       <div
         ref={borderRef}
-        className="absolute top-0 left-4 right-4 sm:left-6 sm:right-6 h-px bg-[#d9d9d9]/10 origin-left"
+        className="absolute top-0 left-4 right-4 sm:left-6 sm:right-6 h-px bg-ink/10 origin-left"
       ></div>
 
       <div
         ref={contentRef}
         className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12"
       >
-        <p className="footer-item text-center text-xs sm:text-sm text-[#8c8c8c]">
+        <p className="footer-item text-center text-xs sm:text-sm text-sub">
           © 2026 Isaac Okwuzi. All rights reserved.
         </p>
       </div>

@@ -57,8 +57,8 @@ const ToolsTicker = () => {
         className="relative overflow-hidden"
       >
         {/* Gradient Masks */}
-        <div className="absolute left-0 top-0 bottom-0 w-12 sm:w-20 bg-gradient-to-r from-[#1a1a1a] to-transparent z-10"></div>
-        <div className="absolute right-0 top-0 bottom-0 w-12 sm:w-20 bg-gradient-to-l from-[#1a1a1a] to-transparent z-10"></div>
+        <div className="absolute left-0 top-0 bottom-0 w-12 sm:w-20 bg-gradient-to-r from-canvas to-transparent z-10"></div>
+        <div className="absolute right-0 top-0 bottom-0 w-12 sm:w-20 bg-gradient-to-l from-canvas to-transparent z-10"></div>
 
         {/* Ticker Track */}
         <div className="flex animate-ticker">
@@ -73,7 +73,7 @@ const ToolsTicker = () => {
                   alt={tool.name}
                   className="w-5 h-5 sm:w-6 sm:h-6 object-contain"
                 />
-                <span className="text-sm font-medium text-[#d9d9d9] whitespace-nowrap">{tool.name}</span>
+                <span className="text-sm font-medium text-ink whitespace-nowrap">{tool.name}</span>
               </div>
             </div>
           ))}
