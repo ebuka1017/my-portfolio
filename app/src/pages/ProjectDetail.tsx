@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { gsap } from 'gsap';
-import { ArrowLeft, ExternalLink, Play, Sparkles, Images } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
+import { ArrowLeft, ExternalLink, Play, Images } from 'lucide-react';
 import { getProjectBySlug } from '../data/projects';
 import ParticleBackground from '../components/ParticleBackground';
 import ImageGallery from '../components/ImageGallery';
@@ -145,21 +144,6 @@ const ProjectDetail = () => {
 
           {/* Header */}
           <div ref={headerRef} className="mb-6 sm:mb-8">
-            <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-3">
-              {project.isVibeEngineered && (
-                <Badge className="bg-ink text-canvas font-medium border-none text-xs sm:text-sm">
-                  <Sparkles className="w-3 h-3 mr-1" />
-                  Vibe Engineered
-                </Badge>
-              )}
-              <Badge 
-                variant="secondary" 
-                className="bg-surface text-sub border-none capitalize text-xs sm:text-sm"
-              >
-                {project.category}
-              </Badge>
-            </div>
-            
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-ink mb-3 sm:mb-4">
               {project.title}
             </h1>

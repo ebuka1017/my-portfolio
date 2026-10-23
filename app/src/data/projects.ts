@@ -12,7 +12,6 @@ export interface Project {
     label: string;
     url: string;
   }[];
-  isVibeEngineered?: boolean;
   demoVideo?: string;
 }
 
@@ -48,7 +47,6 @@ Built using Next.js, Supabase, Pusher, and Bria AI's unique ability to understan
     links: [
       { label: 'Live App', url: 'https://copiedcatz.netlify.app' },
     ],
-    isVibeEngineered: true,
     demoVideo: 'https://youtu.be/rKod0dOpdAU',
   },
   {
@@ -86,7 +84,6 @@ Tech stack: Node.js, Commander.js, Babel, PostCSS, Gemini, Jules, Husky
       { label: 'NPM Package', url: 'https://www.npmjs.com/package/baseguard' },
       { label: 'GitHub', url: 'https://github.com/ebuka1017/baseguard' },
     ],
-    isVibeEngineered: true,
     demoVideo: 'https://youtu.be/OknrfYpLdBo',
   },
   {
@@ -110,7 +107,6 @@ Built for the Google AI Challenge using Gemini AI.`,
       { label: 'Read Article', url: 'https://dev.to/otnotorious/cookflow-turn-any-youtube-recipe-into-a-hands-free-voice-guided-cooking-experience-3ce1' },
       { label: 'Try Demo', url: 'https://ai.studio/apps/drive/1UMtEMDB_mmLb7WLFu_Hn6j9mIXTxvjYd' },
     ],
-    isVibeEngineered: true,
   },
   {
     id: '4',
@@ -139,7 +135,6 @@ Users have already said it helps them learn better. Some students told me they g
     links: [
       { label: 'Live App', url: 'https://learningwithgrace.netlify.app' },
     ],
-    isVibeEngineered: true,
     demoVideo: 'https://youtu.be/8RNzRDRpXEw',
   },
   // GitHub Projects
