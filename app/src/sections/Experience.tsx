@@ -17,7 +17,7 @@ const experiences = [
     id: 1,
     role: 'Independent Contractor',
     company: 'Product Design',
-    period: '11/2024 - Present',
+    period: '11/2024 - 05/2026',
     description: 'Solving complex design and engineering problems for individuals and small business clients, focusing on web aesthetics and user interfaces.',
   },
   {

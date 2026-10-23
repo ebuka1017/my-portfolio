@@ -151,7 +151,7 @@ const Hero = () => {
                 </svg>
               </a>
               <a
-                href="https://linkedin.com/in/isaacokwuzi"
+                href="https://www.linkedin.com/in/isaac-okwuzi-0304791b9/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#202020] flex items-center justify-center border border-[#d9d9d9]/10 transition-all duration-300 hover:bg-[#d9d9d9] hover:text-[#1a1a1a] group"
