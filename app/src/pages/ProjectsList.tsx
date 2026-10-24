@@ -6,52 +6,6 @@ import { projects } from '../data/projects';
 import ParticleBackground from '../components/ParticleBackground';
 import ImageGallery from '../components/ImageGallery';
 
-// Tag color mapping
-const getTagColor = (tag: string): string => {
-  const colors: Record<string, string> = {
-    'AI/ML': 'bg-purple-500/20 text-purple-700 dark:text-purple-300 border-purple-500/30',
-    'Image Generation': 'bg-pink-500/20 text-pink-700 dark:text-pink-300 border-pink-500/30',
-    'Next.js': 'bg-white/10 text-gray-700 dark:text-gray-300 border-white/20',
-    'TypeScript': 'bg-blue-500/20 text-blue-700 dark:text-blue-300 border-blue-500/30',
-    'Bria AI': 'bg-orange-500/20 text-orange-700 dark:text-orange-300 border-orange-500/30',
-    'CLI Tool': 'bg-green-500/20 text-green-700 dark:text-green-300 border-green-500/30',
-    'Developer Tools': 'bg-cyan-500/20 text-cyan-700 dark:text-cyan-300 border-cyan-500/30',
-    'Node.js': 'bg-green-600/20 text-green-700 dark:text-green-400 border-green-600/30',
-    'AI': 'bg-purple-500/20 text-purple-700 dark:text-purple-300 border-purple-500/30',
-    'Open Source': 'bg-yellow-500/20 text-yellow-700 dark:text-yellow-300 border-yellow-500/30',
-    'Voice AI': 'bg-red-500/20 text-red-700 dark:text-red-300 border-red-500/30',
-    'Food Tech': 'bg-orange-500/20 text-orange-700 dark:text-orange-300 border-orange-500/30',
-    'Gemini AI': 'bg-blue-500/20 text-blue-700 dark:text-blue-300 border-blue-500/30',
-    'Web App': 'bg-indigo-500/20 text-indigo-700 dark:text-indigo-300 border-indigo-500/30',
-    'EdTech': 'bg-teal-500/20 text-teal-700 dark:text-teal-300 border-teal-500/30',
-    'AI Tutoring': 'bg-violet-500/20 text-violet-700 dark:text-violet-300 border-violet-500/30',
-    'React': 'bg-cyan-500/20 text-cyan-700 dark:text-cyan-300 border-cyan-500/30',
-    'ElevenLabs': 'bg-amber-500/20 text-amber-700 dark:text-amber-300 border-amber-500/30',
-    'Tavus': 'bg-rose-500/20 text-rose-700 dark:text-rose-300 border-rose-500/30',
-    'C': 'bg-blue-600/20 text-blue-700 dark:text-blue-400 border-blue-600/30',
-    'Low-level Programming': 'bg-gray-500/20 text-gray-700 dark:text-gray-300 border-gray-500/30',
-    'ALX': 'bg-red-600/20 text-red-700 dark:text-red-400 border-red-600/30',
-    'Systems Programming': 'bg-slate-500/20 text-slate-700 dark:text-slate-300 border-slate-500/30',
-    'Operating Systems': 'bg-indigo-600/20 text-indigo-700 dark:text-indigo-400 border-indigo-600/30',
-    'Fintech': 'bg-emerald-500/20 text-emerald-700 dark:text-emerald-300 border-emerald-500/30',
-    'Product Design': 'bg-pink-500/20 text-pink-700 dark:text-pink-300 border-pink-500/30',
-    'UX Research': 'bg-sky-500/20 text-sky-700 dark:text-sky-300 border-sky-500/30',
-    'UI Design': 'bg-fuchsia-500/20 text-fuchsia-700 dark:text-fuchsia-300 border-fuchsia-500/30',
-    'AI Assistant': 'bg-violet-500/20 text-violet-700 dark:text-violet-300 border-violet-500/30',
-    'Mobile Design': 'bg-blue-500/20 text-blue-700 dark:text-blue-300 border-blue-500/30',
-    'Voice UI': 'bg-cyan-500/20 text-cyan-700 dark:text-cyan-300 border-cyan-500/30',
-    'Brand Identity': 'bg-amber-500/20 text-amber-700 dark:text-amber-300 border-amber-500/30',
-    'Ecommerce': 'bg-orange-500/20 text-orange-700 dark:text-orange-300 border-orange-500/30',
-    'Web Design': 'bg-indigo-500/20 text-indigo-700 dark:text-indigo-300 border-indigo-500/30',
-    'UI Kit': 'bg-teal-500/20 text-teal-700 dark:text-teal-300 border-teal-500/30',
-    'UX Design': 'bg-lime-500/20 text-lime-700 dark:text-lime-300 border-lime-500/30',
-    'Onboarding': 'bg-yellow-500/20 text-yellow-700 dark:text-yellow-300 border-yellow-500/30',
-    'Web Platform': 'bg-cyan-600/20 text-cyan-700 dark:text-cyan-400 border-cyan-600/30',
-    'Mobile App': 'bg-pink-600/20 text-pink-700 dark:text-pink-400 border-pink-600/30',
-    'React Native': 'bg-blue-400/20 text-blue-700 dark:text-blue-400 border-blue-400/30',
-  };
-  return colors[tag] || 'bg-raise text-sub border-edge';
-};
 
 const ProjectsList = () => {
   const headerRef = useRef<HTMLDivElement>(null);
@@ -159,16 +113,6 @@ const ProjectsList = () => {
                       <p className="text-sm text-sub line-clamp-2 mb-3 sm:mb-4">
                         {project.description}
                       </p>
-                      <div className="flex flex-wrap gap-1.5 mb-3 sm:mb-4">
-                        {project.tags.slice(0, 3).map((tag) => (
-                          <span
-                            key={tag}
-                            className={`px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-medium border ${getTagColor(tag)}`}
-                          >
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
                       <div className="flex items-center gap-1 text-sm text-ink font-medium">
                         <span>View Details</span>
                         <ArrowUpRight className="w-3 h-3 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
@@ -212,16 +156,6 @@ const ProjectsList = () => {
                       <p className="text-sm text-sub line-clamp-2 mb-3 sm:mb-4">
                         {project.description}
                       </p>
-                      <div className="flex flex-wrap gap-1.5 mb-3 sm:mb-4">
-                        {project.tags.slice(0, 3).map((tag) => (
-                          <span
-                            key={tag}
-                            className={`px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-medium border ${getTagColor(tag)}`}
-                          >
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
                       <div className="flex items-center gap-3">
                         <Link 
                           to={`/projects/${project.slug}`}
@@ -275,16 +209,6 @@ const ProjectsList = () => {
                       <p className="text-sm text-sub line-clamp-2 mb-2 sm:mb-3">
                         {project.description}
                       </p>
-                      <div className="flex flex-wrap gap-1 mb-2 sm:mb-3">
-                        {project.tags.slice(0, 2).map((tag) => (
-                          <span
-                            key={tag}
-                            className={`px-2 py-0.5 rounded-full text-[10px] sm:text-xs font-medium border ${getTagColor(tag)}`}
-                          >
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
                       <div className="flex items-center gap-1 text-sm text-ink font-medium">
                         <span>View Details</span>
                         <ArrowUpRight className="w-3 h-3 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />

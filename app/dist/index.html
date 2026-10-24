@@ -4,8 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Isaac Okwuzi - Portfolio</title>
-    <script type="module" crossorigin src="./assets/index-DLOzzQlr.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CDQ-kdeW.css">
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (t !== 'light' && t !== 'dark') t = 'light';
+          document.documentElement.classList.add(t);
+        } catch (e) { document.documentElement.classList.add('light'); }
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/index-6oECtBLW.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BBvVqH6c.css">
   </head>
   <body>
     <div id="root"></div>
